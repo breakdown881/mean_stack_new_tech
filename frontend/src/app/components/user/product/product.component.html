@@ -1,0 +1,19 @@
+<div class="center" *ngIf="product">
+  <div class="container">
+    <div class="card">
+      <img class="card-img-top" src="https://5.imimg.com/data5/IW/BW/MY-8481883/white-t-shirt-500x500.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{ product.name }}</h5>
+        <p class="card-text">{{ product.description }}</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><span>InStock:</span> {{ product.instock }}</li>
+        <li class="list-group-item"><span>Price:</span> {{ product.price }}</li>
+      </ul>
+      <div class="card-body">
+        <a href="#" class="btn btn-primary">Add to Cart</a>
+        <a href="#" class="card-link">Another link</a>
+      </div>
+    </div>
+  </div>
+</div>

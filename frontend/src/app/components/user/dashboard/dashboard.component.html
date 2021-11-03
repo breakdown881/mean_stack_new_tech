@@ -1,0 +1,7 @@
+<ng-template [ngIf]="user" [ngIfElse]="noUser">
+  <h1>Welcome {{ user.name }}!</h1>
+</ng-template>
+
+<ng-template #noUser>
+  <h3>You are not login</h3>
+</ng-template>

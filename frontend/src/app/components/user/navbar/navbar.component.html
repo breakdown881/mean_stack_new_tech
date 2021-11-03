@@ -1,0 +1,55 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" [routerLink]="['/']">DEMO</a>
+  <button
+    class="navbar-toggler tog"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarColor02"
+    aria-controls="navbarColor02"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarColor02">
+    <ul class="navbar-nav ml-auto">
+      <li
+        class="nav-item"
+        [routerLinkActive]="['active']"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        <a class="nav-link" [routerLink]="['/']">Home</a>
+      </li>
+      <li
+        class="nav-item"
+        [routerLinkActive]="['active']"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        <a class="nav-link" [routerLink]="['/user/login']">Login</a>
+      </li>
+      <li
+        class="nav-item"
+        [routerLinkActive]="['active']"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        <a class="nav-link" [routerLink]="['/user/register']">Register</a>
+      </li>
+      <li
+        class="nav-item"
+        [routerLinkActive]="['active']"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        <a class="nav-link" [routerLink]="['/user/profile']">Profile</a>
+      </li>
+
+      <ng-template [ngIf]="user" [ngIfElse]="noUser">
+        <li class="nav-item">
+          <a class="nav-link" href="#" (click)="onClickLogout()">Logout</a>
+        </li>
+      </ng-template>
+
+      <ng-template #noUser> </ng-template>
+    </ul>
+  </div>
+</nav>

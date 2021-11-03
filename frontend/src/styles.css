@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+.btn {
+  border-radius: 0;
+}
+
+.alert {
+  border-radius: 0;
+}
+
+.alert-danger {
+  background: #CB4335;
+  color: #fff;
+}
+
+.alert-success {
+  background: #2ECC71;
+  color: #fff;
+}
+
+.form-control {
+  border-radius: 0;
+}

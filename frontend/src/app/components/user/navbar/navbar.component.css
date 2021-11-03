@@ -1,0 +1,19 @@
+.item-search {
+  height: 100px;
+  background: #FDEDEC;
+  cursor: pointer;
+}
+
+.tog {
+  border-radius: 0;
+}
+
+a.search-list-link {
+  color: black;
+  text-decoration: none;
+}
+
+a.search-list-link:hover {
+  color: black;
+  text-decoration: none;
+}
